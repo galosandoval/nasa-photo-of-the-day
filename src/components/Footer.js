@@ -1,11 +1,17 @@
 import React from 'react';
+import styled, { keyframes } from 'styled-components';
+
+const StyledP = styled.p`
+  line-height: 1.5rem;
+`
 
 const Footer = (props) => {
   const text = props.data
   return (
-    <div className="text">
+
+    <StyledP className="text">
       {text.explanation}
-    </div>
+    </StyledP>
   )
 }
 

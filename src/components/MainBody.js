@@ -6,7 +6,12 @@ import styled, { keyframes } from 'styled-components';
 
 const StyledDetails = styled.section`
   background-color : peachpuff;
-  
+  display: flex;
+  flex-direction: column;
+  .title {
+    margin: 3%;
+    font-size: 1.4rem;
+  }
 `
 
 const MainBody = (props) => {
@@ -20,6 +25,7 @@ const MainBody = (props) => {
     <div className="title">
       {console.log(data)}
       {data.title}
+    </div>
     <div>
       <Headline  data={data} />
     
@@ -28,7 +34,6 @@ const MainBody = (props) => {
       <Footer data={data} />
 
       </div>
-    </div>
     </div>
     </StyledDetails>
   )
