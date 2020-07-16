@@ -1,10 +1,12 @@
-import Reach from 'react'
+import React from 'react';
 
-function Footer = (props) => {
+const Footer = (props) => {
   const text = props.data
   return (
     <div className="text">
-      {data.explenation}
+      {text.explanation}
     </div>
   )
 }
+
+export default Footer;
